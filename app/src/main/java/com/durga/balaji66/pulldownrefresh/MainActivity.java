@@ -7,14 +7,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements SwipeRefreshLayout.OnRefreshListener {
 
-    /* Global Variables */
-    private SwipeRefreshLayout swipeRefreshLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //Initializing SwipeRefreshLayout.
-        swipeRefreshLayout =findViewById(R.id.swipeRefreshLayout);
+        /* Global Variables */
+        SwipeRefreshLayout swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(this);
 
     }
